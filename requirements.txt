@@ -1,0 +1,12 @@
+#!/bin/bash
+echo "Dependencies instaling..." #print to screen
+echo "redis instaling..." #print to screen
+sudo pip install redis
+echo "sysv_ipc instaling..." #print to screen
+sudo pip install sysv_ipc
+echo "crcmod instaling..." #print to screen
+sudo pip install crcmod
+echo "paho-mqtt instaling..." #print to screen
+sudo pip install paho-mqtt
+echo "schedule instaling..." #print to screen
+sudo pip install schedule
