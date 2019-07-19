@@ -27,6 +27,7 @@ setup(
     author_email='arun.prasad@xyzinnotech.com',
     description='rfid reader for attendance',
     url='https://github.com/Arun1930/reader',
+    install_requires=read('requirements.txt'),
     long_description=get_long_description(),
     py_modules=[package_name],
     entry_points={
