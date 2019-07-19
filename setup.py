@@ -19,10 +19,6 @@ def get_long_description():
             return f.read()
     except IOError:
         return ''
-
-def read(name):
-    with open(os.path.join(this, name)) as f:
-        return f.read()
     
 setup(
     name=package_name,
@@ -31,7 +27,6 @@ setup(
     author_email='arun.prasad@xyzinnotech.com',
     description='rfid reader for attendance',
     url='https://github.com/Arun1930/reader',
-    install_requires=read('requirements.txt'),
     long_description=get_long_description(),
     py_modules=[package_name],
     entry_points={
