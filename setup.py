@@ -20,6 +20,10 @@ def get_long_description():
     except IOError:
         return ''
 
+def read(name):
+    with open(os.path.join(this, name)) as f:
+        return f.read()
+    
 setup(
     name=package_name,
     version=get_version(),
