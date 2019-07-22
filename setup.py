@@ -19,7 +19,7 @@ setup(
     description='rfid reader for attendance',
     url='https://github.com/Arun1930/reader',
     long_description=readme,
-    packages=['reader.py'],
+    packages=['reader'],
     install_requires=['requirements.txt'],
     scripts=['bin/reader'],
     license='License :: OSI Approved :: MIT License',
