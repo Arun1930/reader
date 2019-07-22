@@ -1,18 +1,28 @@
-import os
+#!/usr/bin/env python
+# coding=utf-8
 
 from setuptools import setup
 
-package_name = 'reader'
+
+package_name = 'httpstat'
 filename = package_name + '.py'
 
-with open('README.md') as readme_file:
-    readme = readme_file.read()
 
-this = os.path.dirname(os.path.realpath(__file__))
+def get_version():
+    import ast
 
-def read(name):
-    with open(os.path.join(this, name)) as f:
-        return f.read()
+    with open(filename) as input_file:
+        for line in input_file:
+            if line.startswith('__version__'):
+                return ast.parse(line).body[0].value.s
+
+
+def get_long_description():
+    try:
+        with open('README.md', 'r') as f:
+            return f.read()
+    except IOError:
+        return ''
 
 
 
