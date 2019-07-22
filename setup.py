@@ -21,7 +21,6 @@ setup(
     long_description=readme,
     packages=['reader.py'],
     install_requires=['requirements.txt'],
-    py_modules=[package_name],
     scripts=['bin/reader'],
     license='License :: OSI Approved :: MIT License',
 )
