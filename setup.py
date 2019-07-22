@@ -29,14 +29,14 @@ def get_long_description():
     
 setup(
     name=package_name,
-    version='0.1',
+    version=get_version(),
     author='Arun',
     author_email='arun.prasad@xyzinnotech.com',
     description='rfid reader for attendance',
     url='https://github.com/Arun1930/reader',
-    long_description=readme,
+    long_description=get_long_description(),
     install_requires=read('requirements.txt'),
     py_modules=[package_name],
-    scripts=['bin/reader.py']
+    scripts=['bin/reader.py'],
     license='License :: OSI Approved :: MIT License',
 )
