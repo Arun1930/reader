@@ -4,7 +4,7 @@
 from setuptools import setup
 
 
-package_name = 'httpstat'
+package_name = 'reader'
 filename = package_name + '.py'
 
 
