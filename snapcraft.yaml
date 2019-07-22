@@ -11,10 +11,10 @@ archietectures: [all]
 grade: devel # must be 'stable' to release into candidate/stable channels
 confinement: devmode # use 'strict' once you have the right plugs and slots
 apps:
-  reader:
+  my-parts:
     command: reader
 parts:
-  reader:
+  my-parts:
     plugin: python
     python-version: python2
     source: https://github.com/Arun1930/reader.git
