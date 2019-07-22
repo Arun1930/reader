@@ -1,20 +1,15 @@
+import os
+
 from setuptools import setup
 
+with open('README.md') as readme_file:
+    readme = readme_file.read()
 
-package_name = 'reader'
-filename = package_name + '.py'
+this = os.path.dirname(os.path.realpath(__file__))
 
-
-def get_version():
-    import ast
-
-
-def get_long_description():
-    try:
-        with open('README.md', 'r') as f:
-            return f.read()
-    except IOError:
-        return ''
+def read(name):
+    with open(os.path.join(this, name)) as f:
+        return f.read()
 
 def read(name):
     with open(os.path.join(this, name)) as f:
@@ -22,15 +17,16 @@ def read(name):
 
     
 setup(
-    name=package_name,
-    version=get_version(),
+    name='reader',
+    version='0.1',
     author='Arun',
     author_email='arun.prasad@xyzinnotech.com',
     description='rfid reader for attendance',
     url='https://github.com/Arun1930/reader',
-    long_description=get_long_description(),
+    long_description=readme,
+    packages=['reader.py'],
     install_requires=read('requirements.txt'),
     py_modules=[package_name],
-    scripts=['bin/reader.py'],
+    scripts=['bin/reader'],
     license='License :: OSI Approved :: MIT License',
 )
