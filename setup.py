@@ -11,11 +11,6 @@ def read(name):
     with open(os.path.join(this, name)) as f:
         return f.read()
 
-def read(name):
-    with open(os.path.join(this, name)) as f:
-        return f.read()
-
-    
 setup(
     name='reader',
     version='0.1',
