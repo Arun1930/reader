@@ -13,7 +13,7 @@ def read(name):
 
 setup(
     name='reader',
-    version='0.1',
+    version='1.1',
     author='Arun',
     author_email='arun.prasad@xyzinnotech.com',
     description='rfid reader for attendance',
