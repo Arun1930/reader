@@ -5,8 +5,6 @@ from setuptools import setup
 with open('README.md') as readme_file:
     readme = readme_file.read()
 
-this = os.path.dirname(os.path.realpath(__file__))
-
 def read(name):
     with open(os.path.join(this, name)) as f:
         return f.read()
