@@ -19,7 +19,7 @@ setup(
     author='xyzinnovation',
     author_email='arun.prasad@xyzinnotech.com',
     description='rfid for attendance',
-    url='https://github.com/Arun1930/reader.git',
+    url='https://github.com/Arun1930/reader',
     long_description=get_long_description(),
     py_modules=[package_name],
     entry_points={
