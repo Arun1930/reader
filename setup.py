@@ -5,15 +5,6 @@ package_name = 'reader'
 filename = package_name + '.py'
 
 
-def get_version():
-    import ast
-
-    with open(filename) as input_file:
-        for line in input_file:
-            if line.startswith('__version__'):
-                return ast.parse(line).body[0].value.s
-
-
 def get_long_description():
     try:
         with open('README.md', 'r') as f:
