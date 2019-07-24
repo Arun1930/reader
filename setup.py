@@ -29,7 +29,7 @@ setup(
         'console_scripts': [
             'reader = p_n:main'
             'mqtt-client = p_n1:main'
-            'antena-clear = p_n2:main',
+            'antena-clear = p_n2:main'
         ]
     },
     license='License :: OSI Approved :: MIT License',
