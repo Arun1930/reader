@@ -27,8 +27,8 @@ setup(
     py_modules=[p_n,p_n1,p_n2],
     entry_points={
         'console_scripts': [
-            'reader = reader:main'
-            'mqtt-client = mqtt-client:main'
+            'reader = reader:main',
+            'mqtt-client = mqtt-client:main',
             'antena-clear = antena-clear:main'
         ]
     },
