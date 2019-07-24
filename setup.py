@@ -23,8 +23,8 @@ def get_long_description():
 
 
 setup(
-    name=reader,
-    version=,
+    name='reader',
+    version='0.1',
     author='xyzinnovation',
     author_email='arun.prasad@xyzinnotech.com',
     description='rfid for attendance',
