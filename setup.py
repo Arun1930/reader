@@ -5,10 +5,6 @@ from setuptools import setup
 with open('README.md') as readme_file:
     readme = readme_file.read()
 
-def read(name):
-    with open(os.path.join(this, name)) as f:
-        return f.read()
-
 setup(
     name='reader',
     version='0.1',
@@ -17,7 +13,6 @@ setup(
     description='rfid reader for attendance',
     url='https://github.com/Arun1930/reader',
     long_description=readme,
-    install_requires=read['requirements.txt'],
     scripts=['bin/reader'],
     license='License :: OSI Approved :: MIT License',
 )
