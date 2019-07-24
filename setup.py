@@ -28,12 +28,12 @@ setup(
     author='xyzinnovation',
     author_email='arun.prasad@xyzinnotech.com',
     description='rfid for attendance',
-    url='',
+    url='https://github.com/Arun1930/reader.git',
     long_description=get_long_description(),
     py_modules=[package_name],
     entry_points={
         'console_scripts': [
-            'httpstat = httpstat:main'
+            'reader = reader:main'
         ]
     },
     license='License :: OSI Approved :: MIT License',
