@@ -2,8 +2,6 @@ from setuptools import setup
 
 
 package_name = 'reader'
-p_n1 = 'mqtt-client'
-p_n2 = 'antena-clear'
 filename = package_name + '.py'
 
 
@@ -23,12 +21,11 @@ setup(
     description='rfid for attendance',
     url='https://github.com/Arun1930/reader',
     long_description=get_long_description(),
-    py_modules=[package_name,p_n1,p_n2],
+    py_modules=[package_name],
     entry_points={
         'console_scripts': [
             'reader = reader:main',
-            'mqtt-client = mqtt-client:main',
-            'antena-clear = antena-clear:main'
+            
         ]
     },
     license='License :: OSI Approved :: MIT License',
