@@ -2,10 +2,9 @@ from setuptools import setup
 
 
 package_name = 'reader'
-p_n = 'reader'
 p_n1 = 'mqtt-client'
 p_n2 = 'antena-clear'
-filename = 'reader' + '.py'
+filename = package_name + '.py'
 
 
 def get_long_description():
@@ -24,7 +23,7 @@ setup(
     description='rfid for attendance',
     url='https://github.com/Arun1930/reader',
     long_description=get_long_description(),
-    py_modules=[p_n,p_n1,p_n2],
+    py_modules=[package_name,p_n1,p_n2],
     entry_points={
         'console_scripts': [
             'reader = reader:main',
